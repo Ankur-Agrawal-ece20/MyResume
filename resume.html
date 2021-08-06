@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    #mainbody {
+      display: grid;
+      border: 2px solid black;
+      grid-template-columns: 30% 60%;
+      margin: auto auto auto auto;
+    }
+
+    #row1 {
+      background-color: rgb(33, 33, 167);
+      color: white;
+      height: 100vw;
+      display: grid;
+      grid-template-rows: 24% 20% 20% 25%;
+    }
+
+    #row1 img {
+      height:20vw;
+      background-color: white;
+      border-radius: 20vw;
+      margin: 2vw auto 2px auto;
+    }
+
+    .rowdata {
+      font-size: 1.8vw;
+      margin: 0px 1.5vw 0px 1.5vw;
+    }
+
+    #contact div {
+      margin-top: 1.5vw;
+    }
+
+    #row2 {
+      background-color: white;
+      color: black;
+      height: 100vw;
+      display: grid;
+      grid-template-rows: 24% auto;
+    }
+
+    #about {
+      text-align: center;
+      margin: auto 5px 2px 5px;
+    }
+
+    #about p {
+      font-size: 1.8vw;
+    }
+    .stared{
+      font-size: 1.8vw;
+      color: rgb(33, 33, 167);
+    }
+    .notstared{
+      font-size: 1.8vw;
+      color: black;
+    }
+    #code{
+      height: 28vw
+    }
+    @media screen and (max-width: 600px) {
+      #code{
+        height: 11vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mainbody">
+    <div id="row1">
+      <img src="src/ResumePic.png">
+      <div id="info" class="rowdata">
+        <hr>
+        <h1>Personal Infos</h1>
+        <div><strong style="font-family:sans-serif">Name</strong>: Ankur Agrawal</div>
+        <div><strong style="font-family:sans-serif">DOB</strong>: XX ABC,20XX</div>
+        <div><strong style="font-family:sans-serif">Nationality</strong>: Indian</div>
+        <div><strong style="font-family:sans-serif">Address</strong>: Varanasi,U.P.</div>
+      </div>
+      <div id="skills" class="rowdata">
+        <hr>
+        <h1>Key Skills</h1>
+        <div><strong>&#9832;</strong> Competitive Programming</div>
+        <div><strong>&#9832;</strong> Web Development</div>
+        <div><strong>&#9832;</strong> Basics of Robotics</div>
+        <!-- <div><strong></strong> </div> -->
+      </div>
+      <div id="contact" class="rowdata">
+        <hr>
+        <h1>Contacts</h1>
+        <div>&#9742;: 912XXXXXX</div>
+        <div>&#8512;: ankuragrawalXXX@gmail.com</div>
+        <div><strong style="font-family:sans-serif">Linkedin</strong>:
+          https://www.linkedin.com/in/ankur-agrawal-XXXXXXX</div>
+        <div><strong style="font-family:sans-serif">Github</strong>: https://github.com/Ankur-Agrawal-ece20</div>
+      </div>
+
+    </div>
+
+    <div id="row2">
+      <div id="about">
+        <!-- <hr> -->
+        <div style="font-size: 3.5vw;margin-bottom: 2vw;font-weight: 800;">About Me</div>
+        <p>Myself Ankur Agrawal and I'm from Varanasi, Uttar Pradesh. I am currently pursuing B.Tech.
+          in Electronics from Indian Institute of Technology, B.H.U.. I have completed my secondary
+          education from Sunbeam English School, Bhagwanpur with an aggregate of 90%.
+          Currently my goal is to join a reputed company where I can gain some experience and knowledge
+          and can also utilise my skills for its upliftment.</p>
+        </div>
+        <div>
+        <div id="languages" style="text-align: center;">
+          <hr>
+          <div style="font-size: 3.5vw;margin-bottom: 2vw;font-weight: 800;">Coding Languages</div>
+          <table style="width:100%;font-size: 1.8vw;">
+            <tr style="background-color: black; color: white;">
+              <th>LANGUAGES</th>
+              <th>RATING</th>
+            </tr>
+            <tr>
+              <th>HTML</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+              </th>
+            </tr>
+            <tr>
+              <th>CSS</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="notstared">&#9734;</span>
+              </th>
+            </tr>
+            <tr>
+              <th>JAVASCRIPT</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="notstared">&#9734;</span>
+              </th>
+            </tr>
+            <tr>
+              <th>REACTJS</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="notstared">&#9734;</span>
+                <span class="notstared">&#9734;</span>
+              </th>
+            </tr>
+            <tr>
+              <th>PYTHON DJANGO</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="notstared">&#9734;</span>
+              </th>
+            </tr>
+            <tr>
+              <th>DJANGO REST FRAMEWORK</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="notstared">&#9734;</span>
+              </th>
+            </tr>
+            <tr>
+              <th>C</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="notstared">&#9734;</span>
+              </th>
+            </tr>
+            <tr>
+              <th>C++</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="notstared">&#9734;</span>
+              </th>
+            </tr>
+            <tr>
+              <th>PYTHON</th>
+              <th>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+                <span class="stared">&#9733;</span>
+              </th>
+            </tr>
+            <tr>
+          </table>
+      </div>
+      <div id="education" style="text-align: center;">
+        <hr>
+        <div style="font-size: 3.5vw;margin-bottom: 2vw;font-weight: 800;">Scan QR code to download!</div>
+        <div>
+          <img id="code" src="src/qrcode.png">
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

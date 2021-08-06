@@ -1,0 +1,247 @@
+:root {
+    --navbar-height: 59px;
+}
+
+body {
+    /* min-height: 600px; */
+    background-color:gray;
+}
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    top: 0px;
+    /* min-height: 50px; */
+    height: 60px;
+    width: 99%;
+    /* overflow: hidden; */
+    position: fixed;
+    /* z-index: 1; */
+    background-color:black;
+}
+
+#imagehead{
+    background-color: white;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+#navbar span {
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    margin: 12px 0px 12px 15px;
+}
+
+#navbar ul {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-right: 1vw;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#navbar ul li a {
+    display: block;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 3px 1.5vw;
+    border-radius: 1vw;
+    border: none;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    transition-delay: 0s;
+}
+
+#navbar ul li a:hover {
+    border: 2px solid white;
+}
+#dropbox{
+    margin-left: auto;
+    display: none;
+    /* width: 500px; */
+}
+#dropdown {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    padding: 3px 10px;
+    border-radius: 1vw;
+    margin-left: auto;
+    margin-right: 20px;
+    /* width: 100%; */
+    transition-delay: 0s;
+    border: 1px solid white;
+}
+#myDropdown {
+    display: none;
+    /* position: absolute; */
+    width: 100%;
+    /* opacity: 0; */
+    transition: .5s ease;
+    background-color: black;
+    color: black;
+    text-align: center;
+    font-size: 2vw;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#myDropdown a {
+    display: block;
+    width:96%;
+    /* margin-left: auto; */
+    font-size: 17px;
+    font-weight: 900;
+    padding: 3px 1.5vw;
+    border-radius: 1vw;
+    border: none;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    transition-delay: 0s;
+}
+#myDropdown:target{
+    opacity: 1;
+    /* transition: visibility 1s ease-out; */
+    display: block;
+}
+#myDropdown a:hover {
+    border: 2px solid white;
+}
+#contactbar {
+    display: block;
+    align-items: center;
+    bottom: 0px;
+    max-height: fit-content;
+    width: 99%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    background-color:black;
+}
+#contactbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+#contactbar ul li {
+    margin-right: 10vw;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 900;
+    height: 20px;
+}
+/* #gmail{
+    margin-left: auto;
+}
+#linkedin{
+    margin-right: auto;
+} */
+
+#contactbar ul li img{
+    height: 25px;
+}
+
+.ids {
+    display: none;
+    /* position: absolute; */
+    /* opacity: 0; */
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+#gmailid:target{
+    display: block;
+}
+#gitid:target{
+    display: block;
+}
+#linkedinid:target{
+    display: block;
+}
+
+#mainbody{
+    margin-top: 70px;
+    margin-bottom: 80px;
+    max-width: 80vw;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: 200px auto;
+    margin: 2px 5px 2px 2px;
+}
+.content img{
+    height: 100%;
+    width: 200px;
+    border-right: 3px solid black;
+}
+.title{
+    font-size: 3.5vw;
+    font-weight: 900;
+    margin: 2px 12px 2px 12px;
+}
+.para{
+    font-size: 2.1vw;
+    margin: 2px 2px 2px 7px;
+}
+.para ul p{
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    #dropbox {
+        display: block;
+    }
+    #navbar{
+        width: 97%;
+        height: fit-content;
+    }
+    #contactbar{
+        width: 97%;
+    }
+    #navbar ul {
+        display: none;
+    }
+    .para{
+        font-size: 2.2vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .content{
+        grid-template-columns: 100%;
+        /* align-items: center; */
+    }
+    .content img{
+        border: 2px solid black;
+        margin: 2px auto 2px auto;
+    }
+    .title{
+        margin-top: 10px;
+        border-top: 2px solid black;
+        text-align: center;
+    }
+}
